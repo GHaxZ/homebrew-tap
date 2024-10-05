@@ -1,20 +1,20 @@
 class Brb < Formula
   desc "Terminal be right back tool"
   homepage "https://github.com/GHaxZ/brb/"
-  version "0.1.0"
+  version "0.1.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/GHaxZ/brb/releases/download/v0.1.0/brb-aarch64-apple-darwin.tar.xz"
-      sha256 "a6c34d7cd156f3da898a9334301f6c9149bc3ee745bbdecf3d7006c42fb7b6ae"
+      url "https://github.com/GHaxZ/brb/releases/download/v0.1.1/brb-aarch64-apple-darwin.tar.xz"
+      sha256 "54bbb2cfe28679bac5ae7cdc2dfe22ae4c6cf954029b0646ebd4a2e2c9232150"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/GHaxZ/brb/releases/download/v0.1.0/brb-x86_64-apple-darwin.tar.xz"
-      sha256 "0324450b3cc5052203796a8d996e40f35b1fdd66762838ee83906390b03be3c5"
+      url "https://github.com/GHaxZ/brb/releases/download/v0.1.1/brb-x86_64-apple-darwin.tar.xz"
+      sha256 "4216292577c7b7b140e00ecbf730b10dd1a76eb1e2e085680cf5f2bea0417995"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/GHaxZ/brb/releases/download/v0.1.0/brb-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "98b71d69b5c4426e5a0f2fc308b637760b1c82e2b76e7042f9447c8c948d4026"
+    url "https://github.com/GHaxZ/brb/releases/download/v0.1.1/brb-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "82257b940cc616aad775ec3b852f3a9d22eead3bf9dbf9387ea5dbe6eed633b1"
   end
 
   BINARY_ALIASES = {
