@@ -1,20 +1,20 @@
 class Spotic < Formula
   desc "Spotify CLI controller"
   homepage "https://github.com/GHaxZ/spotic/"
-  version "0.1.0"
+  version "0.1.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/GHaxZ/spotic/releases/download/v0.1.0/spotic-aarch64-apple-darwin.tar.xz"
-      sha256 "6e1995b171b2b2c5796f49ccc8d216653d9b92f2693e5cf31dbb00d93f70da1d"
+      url "https://github.com/GHaxZ/spotic/releases/download/v0.1.1/spotic-aarch64-apple-darwin.tar.xz"
+      sha256 "9a7f0ad304d1900be836ef4c38a5cc58fc111b54eb21c8d86a5c0a087d968a63"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/GHaxZ/spotic/releases/download/v0.1.0/spotic-x86_64-apple-darwin.tar.xz"
-      sha256 "e2d8c6aad00c54949dcab22d4844aa0c2ca15bd35d3b2a1610182f3d33294905"
+      url "https://github.com/GHaxZ/spotic/releases/download/v0.1.1/spotic-x86_64-apple-darwin.tar.xz"
+      sha256 "28c6666fc2fe032aeb072e9e02f4d96068f3efcacc4c70f26b1c4edf9251da13"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/GHaxZ/spotic/releases/download/v0.1.0/spotic-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "b8ea52399d219aceaccb4c099a5314a8b41dacee6154f9b8aaeb7809c4f920f7"
+    url "https://github.com/GHaxZ/spotic/releases/download/v0.1.1/spotic-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "945db7802a756381a7f2b48f08753c97a476932f272bea0ae63bb43336e81e11"
   end
 
   BINARY_ALIASES = {
